@@ -9,6 +9,7 @@ The tool includes:
 
 Results are saved as CSV files for further visualization (e.g., latency heatmaps, CDFs).
 
+-------------------------
 repo/  <br>
 ├─ LinuxAPI/                  # linuxAPI_lib.h / linuxAPI_lib.c （LinuxAPI fragments）  <br>
 ├─ Taclebench/                # bench_lib.h / bench_lib.c （Taclebench fragments） <br>
@@ -23,3 +24,17 @@ repo/  <br>
 │  ├─ benchmark_tool4.py        # Mode 2： (Random Test / fixed M ) <br>
 │  ├─ benchmark_tool5.py        # Mode 2： (Random Test / all-random parameters) <br>
 └─ README.md    <br>      
+
+-------------------------
+Usage
+
+generator → creates one precise task-set instance (C source code output).
+Use `python3 generator3.py` to start the experiment.
+Key Parameter `--M  (maximum M)   --step (step of ρ and α)`
+
+
+benchmark_tool → runs many task sets automatically, compiles, executes, and summarizes results for the paper’s figures. (CSV file output)
+Use `python3 benchmark_tool3.py`  for Mode1
+Use `python3 benchmark_tool4.py`  for Mode2 fixed M
+Use `python3 benchmark_tool5.py`  for Mode2 all-random
+Key Parameter `--M (decide M if fixed)   --tasks (number of task sets)`
