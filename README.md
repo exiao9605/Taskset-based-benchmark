@@ -28,13 +28,13 @@ repo/  <br>
 -------------------------
 Usage
 
-generator → creates one precise task-set instance (C source code output).
-Use `python3 generator3.py` to start the experiment.
+generator → creates one precise task-set instance (C source code output). <br>
+Use `python3 generator3.py` to start the experiment. <br>
 Key Parameter `--M  (maximum M)   --step (step of ρ and α)`
 
 
-benchmark_tool → runs many task sets automatically, compiles, executes, and summarizes results for the paper’s figures. (CSV file output)
-Use `python3 benchmark_tool3.py`  for Mode1
-Use `python3 benchmark_tool4.py`  for Mode2 fixed M
-Use `python3 benchmark_tool5.py`  for Mode2 all-random
-Key Parameter `--M (decide M if fixed)   --tasks (number of task sets)`
+benchmark_tool → runs many task sets automatically, compiles, executes, and summarizes results for the paper’s figures. (CSV file output) <br>
+Use `python3 benchmark_tool3.py`  for Mode1 <br>
+Use `python3 benchmark_tool4.py`  for Mode2 fixed M <br>
+Use `python3 benchmark_tool5.py`  for Mode2 all-random <br>
+Key Parameter `--M (decide M if fixed)   --tasks (number of task sets)` <br>
